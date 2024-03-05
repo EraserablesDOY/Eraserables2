@@ -1,248 +1,246 @@
-body
-{
-	background-color: #F9E79F;
-}
-
-/* Tablets and below */
-@media (max-width: 992px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar #logo {
-        margin-bottom: 10px;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    .main2, .main {
-        flex-direction: column;
-    }
-
-    .circle2 {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .circle {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-}
-
-/* Mobile phones */
-@media (max-width: 576px) {
-    .dropdown ul {
-        padding: 10px;
-    }
-
-    .circle {
-        height: 80px;
-        width: 80px;
-    }
+body {
+    background-color: #F9E79F;
+    font-family: Arial, sans-serif; /* Use a common, web-safe font or your preferred font */
+    padding-top: 70px; /* Make sure content doesn't hide behind the fixed navbar */
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    height: 100px;
     background-color: #D7BDE2;
-    padding: 0 2%;
+    border-color: transparent;
 }
 
-#logo {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin-left: 20px;
-    position: relative; /* For dropdown positioning */
-}
-
-a {
+.navbar-inverse .navbar-nav>li>a {
     color: #F9E79F;
-    text-decoration: none;
-    font-size: 29px;
 }
 
-a:hover {
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
     color: #3658F0;
 }
 
-.dropdown {
-    position: absolute;
-    background-color: silver;
-    display: none;
-    top: 100%; /* Align with the bottom of the navbar */
-    left: 0;
-    font-size: 18px;
-    color: black;
+.navbar-inverse .navbar-toggle {
+    border-color: #D7BDE2;
 }
 
-.navbar li:hover .dropdown {
-    display: block;
-}
-
-.dropdown ul {
-    padding: 20px;
-    margin: 0;
-}
-
-.dropdown li {
-    margin-top: 10px;
-}
-.circle2 {
-    display: block;
-    justify-content: space-around;
-    align-items: center;
+.navbar-inverse .navbar-toggle .icon-bar {
     background-color: #F9E79F;
-/*    height: 100%;*/
-/*    width: 100%;*/
-    /* position: relative; */
-    margin-top: 10px;
-    padding-left: 100px;
-    float:right;
 }
 
-.circle {
-    background-color: silver;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    overflow: hidden;
-    margin: 10% auto 0; /* Centers the div and moves it down */
-    overflow: hidden; /* Ensures the image does not exceed the circular boundary */
-    display: flex; /* Centers the image within the circle */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    border:3px solid #000;
-    position: relative;
-}
-.circle:hover
-{
-	opacity: 50%;
-}
-#photo
-{
-	text-align: left;
-	width: 900px;
-	font-size: 30px;
-    margin-top: 10%;
-    margin-left: 3%;
-    display: block;
-}
-.footer
-{
-	height: 100px;
-	width: 100%;
-	background-color: #B8E0D2;
-	margin-top: 0%;
-}
-#phony
-{
-	height:40px;
-	width: 40px;
-}
-#cateraser
-{
-	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/eraser.jpeg");
-	width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-}
-#sonicbutdead
-{
-	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/sonicbutdead.jpeg");
-	width: 100%;
-	height: auto;
-}
-#panda
-{
-	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/KUNGFO.jpeg");
-	width: 100%;
-	height: auto;
-}
-#pinterest
-{
-	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/pinterest.png");
-	height: 40px;
-	width: 40px;
-}
-.circle {
-    position: relative;
-    display: inline-block; 
- 
-    margin-left: 200px; 
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #F9E79F;
 }
 
-.allcircle {
-    height: 150px;
-    width: 20%;
-    background-color: darkblue;
-    position: absolute;
-    top: 50%; 
-    left: -100%; 
-    transform: translateY(-50%); 
-    display: none; 
-    white-space: nowrap;
-    z-index: 1;
-  
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0; 
+.navbar-header > a > img#logo {
+    width: 50px; /* Adjust based on your logo */
+    height: auto;
+    margin-top: -15px; /* Adjust if your logo needs vertical centering */
 }
-.circle:hover .allcircle
-{
-	display: block;
-	opacity: 1;
-}
-#collage
-{
-    height: 90%;
+
+.carousel-inner > .item > img {
     width: 100%;
-    margin-top: 20%;
-    display: block;
+    margin: auto;
 }
-.main2
-{
-    display: flex;
-    justify-content: space-between;
+
+.carousel-indicators li {
+    background-color: #888;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.circle img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #B8E0D2;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 65px; /* Adjust padding to fit the navbar height */
+    }
+
+    .navbar-header > a > img#logo {
+        width: 40px; /* Adjust logo size for small devices */
+        margin-top: -7px;
+    }
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #F9E79F;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #3658F0;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #D7BDE2;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
     background-color: #F9E79F;
 }
-#myCarousel
-        {
-            width: 100%;
-/*            height: 300px;*/
 
-        }       
-.main 
-{
-    display: flex;
-    flex-direction: column; /* This ensures vertical stacking of child elements */
-    align-items: center; /* Centers the children horizontally */
- }   
-.carousel-inner
-    {
-        height: 150px;
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #F9E79F;
+}
+
+.navbar-header > a > img#logo {
+    width: 50px; /* Adjust based on your logo */
+    height: auto;
+    margin-top: -15px; /* Adjust if your logo needs vertical centering */
+}
+
+.carousel-inner > .item > img {
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-indicators li {
+    background-color: #888;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.circle img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #B8E0D2;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-header {
+        float: none;
     }
-    #catcat
-    {
-        height: 100px;
+
+    .navbar-left,.navbar-right {
+        float: none !important;
     }
-    #sonic
-    {
-        height:100px;
+
+    .navbar-toggle {
+        display: block;
     }
-    #KUNGFO
-    {
-        height: 100px;
+.navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 65px; /* Adjust padding to fit the navbar height */
+    }
+
+    .navbar-header > a > img#logo {
+        width: 40px; /* Adjust logo size for small devices */
+        margin-top: -7px;
+    }
+}
