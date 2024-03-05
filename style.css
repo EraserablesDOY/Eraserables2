@@ -1,0 +1,206 @@
+body
+{
+	background-color: #F9E79F;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #D7BDE2;
+    padding: 0 2%;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 20px;
+    position: relative; /* For dropdown positioning */
+}
+
+a {
+    color: #F9E79F;
+    text-decoration: none;
+    font-size: 29px;
+}
+
+a:hover {
+    color: #3658F0;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: silver;
+    display: none;
+    top: 100%; /* Align with the bottom of the navbar */
+    left: 0;
+    font-size: 18px;
+    color: black;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown ul {
+    padding: 20px;
+    margin: 0;
+}
+
+.dropdown li {
+    margin-top: 10px;
+}
+.circle2 {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F9E79F;
+/*    height: 100%;*/
+/*    width: 100%;*/
+    /* position: relative; */
+    margin-top: 10px;
+    padding-left: 100px;
+    float:right;
+}
+
+.circle {
+    background-color: silver;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: 10% auto 0; /* Centers the div and moves it down */
+    overflow: hidden; /* Ensures the image does not exceed the circular boundary */
+    display: flex; /* Centers the image within the circle */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border:3px solid #000;
+    position: relative;
+}
+.circle:hover
+{
+	opacity: 50%;
+}
+#photo
+{
+	text-align: left;
+	width: 900px;
+	font-size: 30px;
+    margin-top: 10%;
+    margin-left: 3%;
+    display: block;
+}
+.footer
+{
+	height: 100px;
+	width: 100%;
+	background-color: #B8E0D2;
+	margin-top: 35%;
+}
+#phony
+{
+	height:40px;
+	width: 40px;
+}
+#cateraser
+{
+	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/eraser.jpeg");
+	width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+#sonicbutdead
+{
+	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/sonicbutdead.jpeg");
+	width: 100%;
+	height: auto;
+}
+#panda
+{
+	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/KUNGFO.jpeg");
+	width: 100%;
+	height: auto;
+}
+#pinterest
+{
+	background-image:url("/Users/avantikanambiar/Desktop/coding stuff/pinterest.png");
+	height: 40px;
+	width: 40px;
+}
+.circle {
+    position: relative;
+    display: inline-block; 
+ 
+    margin-left: 200px; 
+}
+
+.allcircle {
+    height: 150px;
+    width: 20%;
+    background-color: darkblue;
+    position: absolute;
+    top: 50%; 
+    left: -100%; 
+    transform: translateY(-50%); 
+    display: none; 
+    white-space: nowrap;
+    z-index: 1;
+  
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; 
+}
+.circle:hover .allcircle
+{
+	display: block;
+	opacity: 1;
+}
+#collage
+{
+    height: 90%;
+    width: 100%;
+    margin-top: 20%;
+    display: block;
+}
+.main2
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F9E79F;
+}
+#myCarousel
+        {
+            width: 100%;
+/*            height: 300px;*/
+
+        }       
+.main 
+{
+    display: flex;
+    flex-direction: column; /* This ensures vertical stacking of child elements */
+    align-items: center; /* Centers the children horizontally */
+ }   
+.carousel-inner
+    {
+        height: 150px;
+    }
+    #catcat
+    {
+        height: 100px;
+    }
+    #sonic
+    {
+        height:100px;
+    }
+    #KUNGFO
+    {
+        height: 100px;
+    }
