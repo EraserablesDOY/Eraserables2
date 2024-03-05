@@ -2,6 +2,48 @@ body
 {
 	background-color: #F9E79F;
 }
+
+/* Tablets and below */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar #logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .main2, .main {
+        flex-direction: column;
+    }
+
+    .circle2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .circle {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .dropdown ul {
+        padding: 10px;
+    }
+
+    .circle {
+        height: 80px;
+        width: 80px;
+    }
+}
+
 .navbar {
     display: flex;
     align-items: center;
